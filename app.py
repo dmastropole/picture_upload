@@ -25,5 +25,6 @@ def upload_file2():
             return send_file('uploaded_image', mimetype='image/gif')
 		
 if __name__ == '__main__':
-   app.run(debug = True)
+   port = int(os.environ.get("PORT", 5000))
+   app.run(debug=True, host='0.0.0.0', port=port)
    system('rm uploaded_image')
