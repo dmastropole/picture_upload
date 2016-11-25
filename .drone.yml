@@ -1,4 +1,6 @@
 image: my_drone
 script:
-  - apt-get install -y python python-dev python-pip python-virtualenv
+  - apt-get install -y flask
+  - apt-get install -y werkzeug
+  - apt-get install -y unittest
   - python app_tests.py
