@@ -2,4 +2,3 @@ image: my_drone
 script:
   - pip install flask
   - python app_tests.py
-  - git push heroku master
