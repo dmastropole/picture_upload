@@ -1,3 +1,4 @@
 image: my_drone
 script:
+  - apt-get install -y python python-dev python-pip python-virtualenv
   - python app_tests.py
